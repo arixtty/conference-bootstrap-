@@ -6,61 +6,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="style.css">
   <title>Lander App (Bootstrap)</title>
 </head>
 
 <body>
- 
-  </div>
-
-  <header class="header">
-
+  <header class="header text-white">
+    <div class="container-fluid px-0 d-flex">
+      <nav class="navbar justify-content-sm-end col-sm-6 col-lg-4 p-0">
+        <a href="#" class="navbar-brand text-white mr-3 pl-3 pl-sm-0">Lander:Conference</a>
+        <button class="navbar-toggler border-0 rounded-0 p-3" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+    <div class="header__box container d-flex flex-column justify-content-center align-items-center mt-5 px-md-0">
+      <h1 class="heading-primary mb-5">Be Part of the Most Awesome Conference!</h1>
+      <div class="timer mb-3">
+        <div class="timer__digit">
+          222
+        </div>
+      </div>
+      <form class="form-inline justify-content-center header__form-inline">
+        <input type="email" class="form-control rounded-0 border-0 w-50 mt-2" id="inputEmail"
+          placeholder="Enter your email and be notified!">
+        <button type="submit" class="btn btn-primary rounded-0 mt-2 u-uppercase">Subscribe</button>
+      </form>
+    </div>
   </header>
 
-  <section class="features-main">
+  <main class="main">
+    <section class="about container px-0">
+      <div class="row">
+        <div class="about__slogan col-12 py-5 px-2 text-center">
+          <h2>Fresh ideas from 34 speakers 12 countries</h2>
+          <div class="u-bg-right u-bg-blue"></div>
+        </div>
+      </div>
+      <div class="container-fluid px-0">
+        <div class="container">
+          <div class="row">
+            <div class="about__cta px-md-0 col-lg-6">
+              <h2 class="pt-4 pb-2">Why to Come?</h2>
+              <p class="lead pb-4 mb-0">Proin quis sem ut ipsum scelerisque dapibus a vitae enim. Integer congue, dui
+                ornare sodales sagittis.</p>
+              <div class="u-bg-left u-bg-black"></div>
+            </div>
 
-  </section>
+            <div
+              class="about__tickets col-lg-6 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
+              <p class="lead mb-5 mb-md-0">Don’t miss the opportunity to know more!</p>
+              <a class="btn btn-outline-primary rounded-0 u-uppercase">Buy tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
-  <section class="quotes">
+    <section class="carousel owl-carousel owl-theme">
+      <img src="img/conference-1.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-2.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-3.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-1.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-5.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-6.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-7.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+      <img src="img/conference-5.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
+    </section>
 
-  </section>
+    <section class="topics my-5 container">
+      <h2>Main Topics</h2>
+      <div class="row mt-5">
+        <div class="topics-card col-md-4">
+            <svg class="topics-card__icon mb-3">
+                <use xlink:href="img/sprite.svg#icon-clock"></use>
+              </svg>
+          <h3>Less Work, Less Stress </h3>
+          <hr>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid natus error.
+            Perspiciatis, asperiores est.</p>
+        </div>
+        <div class="topics-card col-md-4">
+            <svg class="topics-card__icon mb-3">
+              <use xlink:href="img/sprite.svg#icon-lock"></use>
+            </svg>
+          <h3>Security & Privacy</h3>
+          <hr>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid natus error.
+            Perspiciatis, asperiores est.</p>
+        </div>
+        <div class="topics-card col-md-4">
+            <svg class="topics-card__icon mb-3">
+                <use xlink:href="img/sprite.svg#icon-bulb"></use>
+              </svg>
+          <h3>New Solar Technologies </h3>
+          <hr>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid natus error.
+            Perspiciatis, asperiores est.</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="features-secondary">
 
-  </section>
+  </main>
 
-  <section class="features-tertiary">
 
-  </section>
-
-  <section class="gallery">
-
-  </section>
-
-  <section class="download">
-
-  </section>
-
-  <section class="team">
-
-  </section>
-
-  <section class="numbers">
-
-  </section>
-
-  <section class="subscribe">
-
-  </section>
-
-  <section class="partners">
-
-  </section>
-
-  <section class="contact">
-
-  </section>
 
   <footer class="footer">
 
@@ -75,6 +131,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Photo by Andrei Stratu on Unsplash-->
 </body>
 
 </html>
