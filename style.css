@@ -9874,8 +9874,16 @@ h3 {
   border-color: #5eacf7;
 }
 
+.lead {
+  font-size: 1rem;
+}
+
 .u-uppercase {
   text-transform: uppercase;
+}
+
+.u-line-through {
+  text-decoration: line-through;
 }
 
 .u-bg-right {
@@ -9903,6 +9911,10 @@ h3 {
   background: #000;
 }
 
+.u-bg-gray {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
@@ -9911,6 +9923,10 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 body {
@@ -9982,6 +9998,105 @@ button.navbar-toggler {
   height: 1.75rem;
   width: 1.75rem;
   fill: #5eacf7;
+}
+
+.schedule .nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding-left: 1rem;
+}
+
+.schedule .nav-pills .nav-link:active,
+.schedule .nav-pills .nav-link:focus,
+.schedule .nav-link.active {
+  color: #5eacf7;
+}
+
+.schedule .nav-pills .nav-link:active::before,
+.schedule .nav-pills .nav-link:focus::before,
+.schedule .nav-link.active::before {
+  content: "";
+  display: inline-block;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.2rem;
+  margin-left: -1rem;
+  background-color: #5eacf7;
+  -webkit-mask-image: url(../img/play3.svg);
+  -webkit-mask-size: cover;
+}
+
+.schedule__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #5eacf7;
+}
+
+.btn-showMore {
+  border: 1px solid gray;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.5rem;
+}
+.btn-showMore__icon {
+  color: #5eacf7;
+  font-size: 1rem;
+}
+
+.showMore__text {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.speaker-image {
+  width: 4rem;
+  height: 4rem;
+}
+
+.speaker-image__img {
+  width: auto;
+  max-height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.speakers {
+  position: relative;
+}
+
+.speaker-card__img-container {
+  width: 10rem;
+  height: 10rem;
+}
+.speaker-card__img {
+  border: 7px solid #fff;
+  border-radius: 50%;
+}
+.speaker-card__btn {
+  border-color: #5eacf7;
+}
+
+.pricing-card {
+  border: none;
+}
+.pricing-card__body {
+  border: 3px solid #e9ecef;
+  transition: all 0.2s ease-out;
+}
+.pricing-card__body:hover {
+  transform: translateY(-5px) scale(1.01);
+  border: 3px solid #000;
+}
+.pricing-card__subtitle {
+  font-size: 3rem;
+}
+.pricing-card__list {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

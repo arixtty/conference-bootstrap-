@@ -46,8 +46,16 @@ $primary: #5eacf7;
   border-color: $primary;
 }
 
+.lead {
+    font-size: 1rem;
+}
+
 .u-uppercase {
   text-transform: uppercase;
+}
+
+.u-line-through {
+  text-decoration: line-through;
 }
 
 .u-bg-right {
@@ -66,6 +74,7 @@ $primary: #5eacf7;
   right: 0;
   z-index: -1;
 }
+
 .u-bg-blue {
   background: $primary;
 }
@@ -74,14 +83,22 @@ $primary: #5eacf7;
   background: $black;
 }
 
+.u-bg-gray {
+  background: rgba($black, 0.05);
+}
+
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h4 {
+    font-size: 1rem;
 }
 body {
   font: 100 1.6rem "Helvetica";
@@ -173,6 +190,111 @@ button.navbar-toggler {
   }
 }
 
-// .carousel {
-//     margin: 3rem 0;
-// }
+.schedule .nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  color: $black;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding-left: 1rem;
+}
+
+.schedule .nav-pills .nav-link:active,
+.schedule .nav-pills .nav-link:focus,
+.schedule .nav-link.active {
+  color: $primary;
+}
+
+.schedule .nav-pills .nav-link:active::before,
+.schedule .nav-pills .nav-link:focus::before,
+.schedule .nav-link.active::before {
+  content: "";
+  display: inline-block;
+  height: .8rem;
+  width: .8rem;
+  margin-right: 0.2rem;
+  margin-left: -1rem;
+//   background-image: url(../img/play3.svg);
+  background-color: $primary;
+  -webkit-mask-image: url(../img/play3.svg);
+  -webkit-mask-size: cover;
+}
+
+
+.schedule__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $primary;
+}
+
+.btn-showMore {
+  border: 1px solid gray;
+  font-size: .75rem;
+  text-transform: uppercase;
+  padding: .3rem .5rem;
+
+  &__icon {
+    color: $primary;
+    font-size: 1rem;
+  }
+}
+
+.showMore__text {
+  font-size: .75rem;
+  color: $gray-600;
+}
+
+.speaker-image {
+  width: 4rem;
+  height: 4rem;
+}
+
+.speaker-image__img {
+  width: auto;
+  max-height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.speakers {
+  position: relative;
+}
+
+.speaker-card {
+  
+  &__img-container {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__img {
+    border: 7px solid #fff;
+    border-radius: 50%;
+  }
+
+  &__btn {
+    border-color: $primary;
+  }
+}
+
+.pricing-card {
+  border: none;
+  &__body {
+    border: 3px solid $gray-200;
+    transition: all .2s ease-out;
+    &:hover {
+      transform: translateY(-5px) scale(1.01);
+      border: 3px solid $black;
+    }
+  }
+
+  &__subtitle {
+    font-size: 3rem;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
