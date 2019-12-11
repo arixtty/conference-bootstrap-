@@ -2,10 +2,10 @@ $(document).ready(function() {
   $(".owl-carousel").owlCarousel();
 });
 
-$(".owl-carousel").owlCarousel({
+$(".carousel-img").owlCarousel({
   loop: true,
   margin: 0,
-  nav: true,
+  nav: false,
   autoplay: true,
   autoplayHoverPause: true,
   responsive: {
@@ -22,4 +22,13 @@ $(".owl-carousel").owlCarousel({
       items: 3
     }
   }
+});
+
+$(".carousel-quotes").owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: true,
+  dots: false,
+  autoplay: false,
+  items: 1
 });

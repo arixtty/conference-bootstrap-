@@ -298,3 +298,71 @@ button.navbar-toggler {
     line-height: 2;
   }
 }
+
+.quotes {
+  // margin: 5rem 4rem;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba($black, 0.4),
+    rgba($black, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  color: $primary;
+
+  &__quote {
+    font-size: 1.125rem;
+    color: $white;
+  }
+
+  &__picture {
+    width: 10rem;
+    text-align: center;
+  }
+  &__author-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+
+.owl-nav {
+  position: relative;
+  top: -40px;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    right: 10%;
+    top: 53%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+  }
+}
+
+.partners {
+
+  &__logos{
+
+  }
+
+  &__logo {
+    background: $gray-400;
+    max-width: 10rem;
+  }
+  
+  &__logo-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.footer {
+  margin-top: -5px;
+}

@@ -10099,4 +10099,59 @@ button.navbar-toggler {
   line-height: 2;
 }
 
+.quotes {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  color: #5eacf7;
+}
+.quotes__quote {
+  font-size: 1.125rem;
+  color: #fff;
+}
+.quotes__picture {
+  width: 10rem;
+  text-align: center;
+}
+.quotes__author-img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.owl-nav {
+  position: relative;
+  top: -40px;
+}
+@media (min-width: 768px) {
+  .owl-nav {
+    position: absolute;
+    right: 10%;
+    top: 53%;
+  }
+}
+@media (min-width: 992px) {
+  .owl-nav {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+  }
+}
+
+.partners__logo {
+  background: #ced4da;
+  max-width: 10rem;
+}
+.partners__logo-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  margin-top: -5px;
+}
+
 /*# sourceMappingURL=style.css.map */
