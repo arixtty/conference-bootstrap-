@@ -13,24 +13,48 @@
 </head>
 
 <body>
-  <header class="header text-white">
-    <div class="container-fluid px-0 d-flex">
-      <nav class="navbar justify-content-sm-end col-sm-6 col-lg-4 p-0">
-        <a href="#" class="navbar-brand text-white mr-3 pl-3 pl-sm-0">Lander:Conference</a>
-        <button class="navbar-toggler border-0 rounded-0 p-3" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </div>
+  <div class="container-fluid px-0 d-flex">
+    <nav class="navbar justify-content-sm-end col-sm-6 col-lg-4 p-0 fixed-top">
+      <a href="#" class="navbar-brand text-white mr-3 pl-3 pl-sm-0">Lander:Conference</a>
+      <button class="navbar-toggler border-0 rounded-0 p-3" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse p-3 fade" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item my-4 active">
+            <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item my-4">
+            <a class="nav-link" href="#topics">Topics</a>
+          </li>
+
+          <li class="nav-item my-4">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+
+          <li class="nav-item my-4">
+            <a class="nav-link" href="#speakers">Speakers</a>
+          </li>
+
+          <li class="nav-item my-4">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <header class="header text-white d-flex justify-content-center justify-items-center" id="top">
     <div class="header__box container d-flex flex-column justify-content-center align-items-center mt-5 px-md-0">
       <h1 class="heading-primary mb-5">Be Part of the Most Awesome Conference!</h1>
-      <div class="timer mb-3">
+      <!-- <div class="timer mb-3">
         <div class="timer__digit">
           222
         </div>
-      </div>
+      </div> -->
       <form class="form-inline justify-content-center header__form-inline">
         <input type="email" class="form-control rounded-0 border-0 w-50 mt-2" id="inputEmail"
           placeholder="Enter your email and be notified!">
@@ -79,7 +103,7 @@
       <img src="img/conference-5.jpg" alt="Фото прошлогодней конференции" class="carousel__image">
     </section>
 
-    <section class="topics my-5 container">
+    <section class="topics my-5 container" id="topics">
       <h2>Main Topics</h2>
       <div class="row mt-5">
         <div class="topics-card col-md-4">
@@ -112,7 +136,7 @@
       </div>
     </section>
 
-    <section class="schedule container my-5">
+    <section class="schedule container my-5" id="schedule">
       <h2>Schedule</h2>
       <div class="row mt-5">
         <div class="col-12 col-md-3">
@@ -337,7 +361,7 @@
       </div>
     </section>
 
-    <section class="speakers container">
+    <section class="speakers container" id="speakers">
 
       <h2 class="py-5">Speakers</h2>
       <div class="row">
@@ -454,67 +478,76 @@
       <div class="carousel-quotes owl-carousel owl-theme">
 
         <div class="quotes__quote p-5">
-              <div class="quotes__block d-flex flex-column flex-md-row justify-content-center">
-                <div class="quotes__picture align-self-center">
-                  <img src="img/user-1.jpg" alt="Picture of a speaker" class="quotes__author-img">
-                  <p class="quotes__author-name mt-2">Speaker One</p>
-                </div>
-                <div class="quotes__paragraph d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-around text-center pt-2 pb-0 pb-md-5">
-                  <p class="quotes__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis in voluptatem.</p>
-                  <hr class="quotes__ruler w-100 border-secondary">
-                </div>
-              </div>             
+          <div class="quotes__block d-flex flex-column flex-md-row justify-content-center">
+            <div class="quotes__picture align-self-center">
+              <img src="img/user-1.jpg" alt="Picture of a speaker" class="quotes__author-img">
+              <p class="quotes__author-name mt-2">Speaker One</p>
+            </div>
+            <div
+              class="quotes__paragraph d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-around text-center pt-2 pb-0 pb-md-5">
+              <p class="quotes__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis in voluptatem.</p>
+              <hr class="quotes__ruler w-100 border-secondary">
+            </div>
+          </div>
         </div>
 
         <div class="quotes__quote">
-            <div class="quotes__block d-flex flex-column flex-md-row justify-content-center">
-              <div class="quotes__picture align-self-center">
-                <img src="img/user-3.jpg" alt="Picture of a speaker" class="quotes__author-img">
-                <p class="quotes__author-name mt-2">Speaker Two</p>
-              </div>
-              <div class="quotes__paragraph d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-around text-center pt-2 pb-0 pb-md-5">
-                <p class="quotes__text">
-                  Delectus repellendus facere non sunt nam corporis magnam, adipisci perferendis.</p>
-                <hr class="quotes__ruler w-100 border-secondary">
-              </div>
-            </div>             
-      </div>
+          <div class="quotes__block d-flex flex-column flex-md-row justify-content-center">
+            <div class="quotes__picture align-self-center">
+              <img src="img/user-3.jpg" alt="Picture of a speaker" class="quotes__author-img">
+              <p class="quotes__author-name mt-2">Speaker Two</p>
+            </div>
+            <div
+              class="quotes__paragraph d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-around text-center pt-2 pb-0 pb-md-5">
+              <p class="quotes__text">
+                Delectus repellendus facere non sunt nam corporis magnam, adipisci perferendis.</p>
+              <hr class="quotes__ruler w-100 border-secondary">
+            </div>
+          </div>
+        </div>
 
-      <div class="quotes__quote">
+        <div class="quotes__quote">
           <div class="quotes__block d-flex flex-column flex-md-row justify-content-center">
             <div class="quotes__picture align-self-center">
               <img src="img/user-2.jpg" alt="Picture of a speaker" class="quotes__author-img">
             </div>
-            <div class="quotes__paragraph d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-around text-center pt-2 pb-0">
+            <div
+              class="quotes__paragraph d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-around text-center pt-2 pb-0">
               <p class="quotes__text">
                 Maxime dolorem sint dolorum voluptatum!</p>
-                <hr class="quotes__ruler w-100 border-secondary">
-                <p class="quotes__author-name mt-2 align-self-start">Third Speaker</p>
+              <hr class="quotes__ruler w-100 border-secondary">
+              <p class="quotes__author-name mt-2 align-self-start">Third Speaker</p>
             </div>
-          </div>             
-    </div>     
-    </section>
-
-    <section class="partners my-5 py-5 container">
-        <h2 class="pb-3">Partners</h2>
-        <div class="partners__logos d-flex flex-wrap justify-content-around">
-            <div class="partners__logo m-3 d-flex align-items-center p-2"><img src="img/logo-bbc.png" alt="Partner logo" class="partners__logo-img"></div>
-            <div class="partners__logo m-3 d-flex align-items-center p-2"><img src="img/logo-bi.png" alt="Partner logo" class="partners__logo-img"></div>
-            <div class="partners__logo m-3 d-flex align-items-center p-2"><img src="img/logo-forbes.png" alt="Partner logo" class="partners__logo-img">
-            </div>
-            <div class="partners__logo m-3 d-flex align-items-center p-2"> <img src="img/logo-techcrunch.png" alt="Partner logo" class="partners__logo-img"></div>
+          </div>
         </div>
     </section>
 
-    <section class="map mt-5 container-fluid">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9af73e6d02e7bab305db8732d1fc34590c662b999c96650a2bef623f80cfa34e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    <section class="partners my-5 py-5 container">
+      <h2 class="pb-3">Partners</h2>
+      <div class="partners__logos d-flex flex-wrap justify-content-around">
+        <div class="partners__logo m-3 d-flex align-items-center p-2"><img src="img/logo-bbc.png" alt="Partner logo"
+            class="partners__logo-img"></div>
+        <div class="partners__logo m-3 d-flex align-items-center p-2"><img src="img/logo-bi.png" alt="Partner logo"
+            class="partners__logo-img"></div>
+        <div class="partners__logo m-3 d-flex align-items-center p-2"><img src="img/logo-forbes.png" alt="Partner logo"
+            class="partners__logo-img">
+        </div>
+        <div class="partners__logo m-3 d-flex align-items-center p-2"> <img src="img/logo-techcrunch.png"
+            alt="Partner logo" class="partners__logo-img"></div>
+      </div>
+    </section>
+
+    <section class="map mt-5 container-fluid" id="contacts">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A9af73e6d02e7bab305db8732d1fc34590c662b999c96650a2bef623f80cfa34e&amp;source=constructor"
+        width="100%" height="400" frameborder="0"></iframe>
     </section>
   </main>
 
   <footer class="footer position-relative container">
-              <p class="lead copyright text-white  py-3 px-1">&copy; 2019 Аркадий Кузнецов. Фото – Unsplash</p>
-              <div class="u-bg-left u-bg-black"></div>
+    <p class="lead copyright text-white  py-3 px-1">&copy; 2019 Аркадий Кузнецов. Фото – Unsplash</p>
+    <div class="u-bg-left u-bg-black"></div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

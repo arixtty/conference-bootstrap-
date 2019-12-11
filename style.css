@@ -9934,7 +9934,7 @@ body {
 }
 
 nav.navbar {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
 }
 
@@ -9947,6 +9947,11 @@ button.navbar-toggler {
   width: 1.2rem;
   height: 1.2rem;
   margin-bottom: 1px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
 }
 
 .header {
