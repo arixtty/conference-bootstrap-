@@ -8098,9 +8098,23 @@ button.navbar-toggler {
 
 .header {
   height: 80vh;
-  background-image: linear-gradient(to right, rgba(173, 181, 189, 0.2), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@0.5x.jpg);
   background-size: cover;
-  background-position: center;
+  color: #5eacf7;
+}
+@media only screen and (min-width: 100em), (min-resolution: 192dpi), only screen and (min-width: 100em), (-webkit-min-device-pixel-ratio: 2) {
+  .header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@1x.jpg);
+    background-size: cover;
+    color: #5eacf7;
+  }
+}
+@media only screen and (min-width: 212.5em) {
+  .header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@2x.jpg);
+    background-size: cover;
+    color: #5eacf7;
+  }
 }
 @media only screen and (min-width: 75em) {
   .header__box {
@@ -8248,9 +8262,23 @@ button.navbar-toggler {
 
 .quotes {
   position: relative;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@0.5x.jpg);
   background-size: cover;
   color: #5eacf7;
+}
+@media only screen and (min-width: 100em), (min-resolution: 192dpi), only screen and (min-width: 100em), (-webkit-min-device-pixel-ratio: 2) {
+  .quotes {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@1x.jpg);
+    background-size: cover;
+    color: #5eacf7;
+  }
+}
+@media only screen and (min-width: 212.5em) {
+  .quotes {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@2x.jpg);
+    background-size: cover;
+    color: #5eacf7;
+  }
 }
 .quotes__quote {
   font-size: 1.125rem;

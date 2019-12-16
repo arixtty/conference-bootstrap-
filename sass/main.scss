@@ -136,13 +136,37 @@ button.navbar-toggler {
 .header {
   height: 80vh;
   background-image: linear-gradient(
-      to right,
-      rgba($gray-500, 0.2),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../img/hero.jpg);
+    to right,
+    rgba($black, 0.4),
+    rgba($black, 0.8)
+  ),
+  url(../img/hero@0.5x.jpg);
   background-size: cover;
-  background-position: center;
+  color: $primary;
+
+  @media 
+  only screen and (min-width: 100em), (min-resolution: 192dpi),
+  only screen and (min-width: 100em),(-webkit-min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+      to right,
+      rgba($black, 0.4),
+      rgba($black, 0.8)
+    ),
+    url(../img/hero@1x.jpg);
+    background-size: cover;
+    color: $primary;
+  }
+
+  @media only screen and (min-width: 212.5em) {
+    background-image: linear-gradient(
+      to right,
+      rgba($black, 0.4),
+      rgba($black, 0.8)
+    ),
+    url(../img/hero@2x.jpg);
+    background-size: cover;
+    color: $primary;
+  }
 
   &__box {
     @media only screen and (min-width: 75em) {
@@ -315,9 +339,32 @@ button.navbar-toggler {
     rgba($black, 0.4),
     rgba($black, 0.8)
   ),
-  url(../img/hero.jpg);
+  url(../img/hero@0.5x.jpg);
   background-size: cover;
   color: $primary;
+
+  @media only screen and (min-width: 100em), (min-resolution: 192dpi),
+  only screen and (min-width: 100em), (-webkit-min-device-pixel-ratio: 2)  {
+    background-image: linear-gradient(
+      to right,
+      rgba($black, 0.4),
+      rgba($black, 0.8)
+    ),
+    url(../img/hero@1x.jpg);
+    background-size: cover;
+    color: $primary;
+  }
+
+  @media only screen and (min-width: 212.5em) {
+    background-image: linear-gradient(
+      to right,
+      rgba($black, 0.4),
+      rgba($black, 0.8)
+    ),
+    url(../img/hero@2x.jpg);
+    background-size: cover;
+    color: $primary;
+  }
 
   &__quote {
     font-size: 1.125rem;
