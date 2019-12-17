@@ -8085,23 +8085,25 @@ button.navbar-toggler {
 }
 
 .header {
-  height: 80vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@0.5x.jpg);
-  background-size: cover;
+  min-height: 80vh;
+  background-image: url(../img/hero@0.5x.jpg);
+  background-repeat: no-repeat;
+  background-size: 300%;
   color: #5eacf7;
+}
+@media only screen and (min-width: 48em) {
+  .header {
+    background-size: 150%;
+  }
 }
 @media only screen and (min-width: 100em), (min-resolution: 192dpi), only screen and (min-width: 100em), (-webkit-min-device-pixel-ratio: 2) {
   .header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@1x.jpg);
-    background-size: cover;
-    color: #5eacf7;
+    background-image: url(../img/hero@1x.jpg);
   }
 }
 @media only screen and (min-width: 212.5em) {
   .header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/hero@2x.jpg);
-    background-size: cover;
-    color: #5eacf7;
+    background-image: url(../img/hero@2x.jpg);
   }
 }
 @media only screen and (min-width: 75em) {
@@ -8176,6 +8178,8 @@ button.navbar-toggler {
   background-color: #5eacf7;
   -webkit-mask-image: url(../img/play3.svg);
   -webkit-mask-size: cover;
+  mask-image: url(../img/play3.svg);
+  mask-size: cover;
 }
 
 .schedule__icon {
